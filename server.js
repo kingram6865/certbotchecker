@@ -6,7 +6,7 @@ const cors = require('cors')
 const logger = require('morgan')
 // const routes = require('./routes/main')
 // const PORT = process.env.PORT || 3019
-const SERVER = process.env.HOST || localhost
+const SERVER = process.env.HOST || 'localhost'
 const TIME = new Date()
 
 const app = express()
