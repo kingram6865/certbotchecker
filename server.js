@@ -1,11 +1,12 @@
 const color = require('./utilities/consoleColors')
+require('dotenv').config()
 const fs = require('fs')
 const https = require('https')
 const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
 // const routes = require('./routes/main')
-const PORT = process.env.PORT || 3030
+const PORT = parseInt(process.env.PORT) || 3030
 const SERVER = process.env.HOST || 'localhost'
 const TIME = new Date()
 
